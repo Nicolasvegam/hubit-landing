@@ -40,12 +40,12 @@ html {
 }
 
 body, p {
-	color: #53575a; 
-	font: 400 1rem/1.625rem "Open Sans", sans-serif;
+	color: #53575a;
+	font: 400 1rem/1.625rem "Karla", sans-serif
 }
 
 h1 {
-	color: #2b2b4f;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 2.5rem;
 	line-height: 3.125rem;
@@ -53,7 +53,7 @@ h1 {
 }
 
 h2 {
-	color: #2b2b4f;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 2.5rem;
@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-	color: #2b2b4f;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 1.75rem;
 	line-height: 2.25rem;
@@ -69,7 +69,7 @@ h3 {
 }
 
 h4 {
-	color: #2b2b4f;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 1.5rem;
 	line-height: 2.125rem;
@@ -77,14 +77,14 @@ h4 {
 }
 
 h5 {
-	color: #2b2b4f;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 }
 
 h6 {
-	color: #2b2b4f;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -197,9 +197,9 @@ a:hover {
 .btn-solid-sm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #0099ff;
+	border: 1px solid #1DB954;
 	border-radius: 4px;
-	background-color: #0099ff;
+	background-color: #1DB954;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -209,9 +209,9 @@ a:hover {
 }
 
 .btn-solid-sm:hover {
-	border: 1px solid #0099ff;
+	border: 1px solid #1DB954;
 	background-color: transparent;
-	color: #0099ff;
+	color: #1DB954;
 	text-decoration: none;
 }
 
@@ -382,10 +382,10 @@ input[type='checkbox'] {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #ffd103;
+	border: 1px solid #1DB954;
 	border-radius: 4px;
-	background-color: #ffd103;
-	color: #2b2b4f;
+	background-color: #1DB954;
+	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
 	line-height: 0;
@@ -394,8 +394,8 @@ input[type='checkbox'] {
 }
 
 .form-control-submit-button:hover {
-	border: 1px solid #2b2b4f;
-	background-color: #2b2b4f;
+	border: 1px solid #343a40;
+	background-color: #343a40;
 	color: #ffffff;
 }
 
@@ -467,7 +467,7 @@ input[type='checkbox'] {
 .navbar .nav-item.dropdown.show .nav-link,
 .navbar .nav-item .nav-link:hover,
 .navbar .nav-item .nav-link.active {
-	color: #0099ff;
+	color: #1DB954;
 }
 
 /* Dropdown Menu */
@@ -532,7 +532,7 @@ input[type='checkbox'] {
 /*****************/
 .header {
 	padding-top: 7.75rem;
-	background: url('../images/header-background.png') center center no-repeat;
+	/*background: url('../images/header-background.png') center center no-repeat;*/
 	background-size: cover;
 	text-align: center;
 }
@@ -570,7 +570,7 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
 	margin-left: auto;
 	border-radius: 4px;
-	background-color: #0099ff;
+	background-color: #343a40;
 	text-align: center;
 }
 
@@ -597,13 +597,25 @@ input[type='checkbox'] {
 
 .slider-1 #counter .counter-value {
 	margin-bottom: 1.75rem;
-	color: #0099ff;
+	color: #1DB954;
 	font-weight: 700;
 	font-size: 2.75rem;
 }
 
 .slider-1 #counter .counter-value::after {
 	content: "+";
+	margin-left: 0.375rem;
+  }
+
+.slider-1 #counter2 .counter-value2 {
+	margin-bottom: 1.75rem;
+	color: #1DB954;
+	font-weight: 700;
+	font-size: 2.75rem;
+}
+
+.slider-1 #counter2 .counter-value2::after {
+	content: "%";
 	margin-left: 0.375rem;
   }
 
@@ -791,7 +803,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-5 .video-play-button:before {
 	content: "";
 	position: absolute;
@@ -808,7 +820,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-5 .video-play-button:after {
 	content: "";
 	position: absolute;
@@ -825,7 +837,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .basic-5 .video-play-button span {
 	position: relative;
 	display: block;
@@ -838,7 +850,7 @@ input[type='checkbox'] {
 	border-top: 16px solid transparent;
 	border-bottom: 16px solid transparent;
 }
-  
+
 @keyframes pulse-border {
 	0% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -1114,7 +1126,7 @@ a:hover.back-to-top {
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
 
@@ -1123,7 +1135,7 @@ a:hover.back-to-top {
 		display: inline-block;
 		vertical-align: top;
 	}
-	
+
 	.header .form-control-input {
 		width: 16rem;
 		border-top-right-radius: 0;
@@ -1160,7 +1172,7 @@ a:hover.back-to-top {
 		display: inline-block;
 		vertical-align: top;
 	}
-	
+
 	.form-1 .form-control-input {
 		width: 20rem;
 		border-top-right-radius: 0;
@@ -1191,7 +1203,7 @@ a:hover.back-to-top {
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
+
 	/* General Styles */
 	.h2-heading {
 		width: 35.25rem;
@@ -1245,7 +1257,7 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.75rem;
 		padding-left: 0.75rem;
@@ -1277,14 +1289,14 @@ a:hover.back-to-top {
 	.header .text-container {
 		margin-top: 3rem;
 	}
-	
+
 	.header .card {
 		display: inline-block;
 		width: 290px;
 		text-align: center;
 		vertical-align: top;
 	}
-	
+
 	.header .card:nth-of-type(3n+2) {
 		margin-right: 1.5rem;
 		margin-left: 1.5rem;
@@ -1299,7 +1311,7 @@ a:hover.back-to-top {
 	}
 	/* end of features */
 
-	
+
 	/* Details 1 */
 	.basic-2 .text-container {
 		margin-top: 3rem;
@@ -1345,7 +1357,7 @@ a:hover.back-to-top {
 		width: 22px;
 		background-size: 22px 34px;
 	}
-	
+
 	.slider-2 .swiper-button-next {
 		right: -16px;
 		width: 22px;
@@ -1356,7 +1368,7 @@ a:hover.back-to-top {
 		display: flex;
 		align-items: flex-start;
 	}
-	
+
 	.slider-2 .text {
 		flex-direction: column;
 	}
@@ -1364,7 +1376,7 @@ a:hover.back-to-top {
 	.slider-2 .testimonial-author {
 		margin-top: 0.625rem;
 	}
-	
+
 	.slider-2 .testimonial-image {
 		margin-right: 1.125rem;
 		margin-bottom: 0;
@@ -1383,14 +1395,14 @@ a:hover.back-to-top {
 		margin-right: 1.75rem;
 		vertical-align: top;
 	}
-	
+
 	.footer .footer-col.second {
 		display: inline-block;
 		width: 320px;
 		margin-right: 1.75rem;
 		vertical-align: top;
 	}
-	
+
 	.footer .footer-col.third {
 		display: inline-block;
 		width: 224px;
@@ -1503,7 +1515,7 @@ a:hover.back-to-top {
 	.slider-2 .swiper-button-prev {
 		left: -24px;
 	}
-	
+
 	.slider-2 .swiper-button-next {
 		right: -24px;
 	}
@@ -1523,11 +1535,11 @@ a:hover.back-to-top {
 		width: 352px;
 		margin-right: 6rem;
 	}
-	
+
 	.footer .footer-col.second {
 		margin-right: 6.5rem;
 	}
-	
+
 	.footer .footer-col.third {
 		text-align: right;
 	}

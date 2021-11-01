@@ -2,8 +2,8 @@
 
 
 (function($) {
-    "use strict"; 
-	
+    "use strict";
+
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
@@ -13,7 +13,7 @@
 			$(".fixed-top").removeClass("top-nav-collapse");
 		}
     });
-    
+
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 		$(document).on('click', 'a.page-scroll', function(event) {
@@ -57,8 +57,8 @@
         iframe: {
             patterns: {
                 youtube: {
-                    index: 'youtube.com/', 
-                    id: function(url) {        
+                    index: 'youtube.com/',
+                    id: function(url) {
                         var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
                         if ( !m || !m[1] ) return null;
                         return m[1];
@@ -66,8 +66,8 @@
                     src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                 },
                 vimeo: {
-                    index: 'vimeo.com/', 
-                    id: function(url) {        
+                    index: 'vimeo.com/',
+                    id: function(url) {
                         var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
                         if ( !m || !m[5] ) return null;
                         return m[5];
@@ -113,7 +113,7 @@
         }
     });
 
-	
+
     /* Card Slider - Swiper */
 	var cardSlider = new Swiper('.card-slider', {
 		autoplay: {
@@ -139,7 +139,7 @@
     /* Counter - CountTo */
 	var a = 0;
 	$(window).scroll(function() {
-		if ($('#counter').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors	
+		if ($('#counter').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors
 			var oTop = $('#counter').offset().top - window.innerHeight;
 			if (a == 0 && $(window).scrollTop() > oTop) {
 			$('.counter-value').each(function() {
@@ -167,6 +167,36 @@
 		}
     });
 
+  /* Counter - CountTo */
+	var b = 0;
+	$(window).scroll(function() {
+		if ($('#counter2').length) { // checking if CountTo section exists in the page, if not it will not run the script and avoid errors
+			var oTop = $('#counter').offset().top - window.innerHeight;
+			if (b == 0 && $(window).scrollTop() > oTop) {
+			$('.counter-value2').each(function() {
+				var $this = $(this),
+				countTo = $this.attr('data-count');
+				$({
+				countNum: $this.text()
+				}).animate({
+					countNum: countTo
+				},
+				{
+					duration: 2000,
+					easing: 'swing',
+					step: function() {
+					$this.text(Math.floor(this.countNum));
+					},
+					complete: function() {
+					$this.text(this.countNum);
+					//alert('finished');
+					}
+				});
+			});
+			b = 1;
+			}
+		}
+    });
 
     /* Move Form Fields Label When User Types */
     // for input and textarea fields
@@ -177,7 +207,7 @@
 			$(this).removeClass('notEmpty');
 		}
 	});
-	
+
 
     /* Back To Top Button */
     // create the back to top button
